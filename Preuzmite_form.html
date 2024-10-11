@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Preuzmite</title>
+    <link rel="stylesheet" href="Minecraft.css">
+    <script src="js.js" defer></script>
+</head>
+<body>
+<nav>
+  <ul class="Lista">
+    <li class="Menu"><a href="#">Igre</a>
+      <ul class="Podlista">
+        <li class="link1"><a href="Minecraft_igra.html">Minecraft</a></li>
+        <li class="link1"><a href="Minecraft_Dungeons.html">Minecraft Dungeons</a></li>
+        <li class="link1"><a href="Minecraft_Legends.html">Minecraft Legends</a></li>
+      </ul>
+    </li>
+    <li><a href="Minecraft_trgovina.html">Trgovina</a></li>
+    <li><a href="index.html">Početna</a></li>
+  </ul>
+  <a href="index.html"><img class="Naslovna_slika" src="Slike/logo-minecraft.png" alt="Minecraft"></a>
+  <a class="Navigation_button-link" href="Preuzmite_form.html">
+    <section class="Navigation-button">
+      <p class="Navigation_button-tekst">Preuzmi</p>
+    </section>
+  </a>
+</nav>
+<main>
+  <section class="Form-pozadinska_slika">
+    <form>
+      <fieldset class="Form-fieldset_ispunite_za_kupovinu">
+      <legend>Ispunite za kupovinu</legend>
+        <fieldset class="Form-fieldset_unutar">
+          <legend>Osobni podatci</legend>
+          <label for="ime">Ime:</label>
+          <input class="Form-input_osobni_podatci" type="text" id="ime" placeholder="" size="30" maxlength="15"> <br>
+          <label for="Prezime">Prezime:</label>
+          <input class="Form-input_osobni_podatci" type="text" id="Prezime" placeholder="" size="30" maxlength="15"><br>
+          <label for="email">Email:</label>
+          <input class="Form-input_osobni_podatci" type="text" id="email" placeholder="" size="30" maxlength="40"><br>
+          <label for="brtelefona">Broj telefona:</label>
+          <input class="Form-input_osobni_podatci" type="number" id="brtelefona" placeholder=""> <br>
+          <label for="datumrodjenja">Datum rođenja:</label>
+          <input class="Form-input_osobni_podatci" type="month" id="datumrodjenja" size="30"> <br>
+        </fieldset>
+        <fieldset class="Form-fieldset_unutar">
+          <legend>Koju igricu želite kupiti?</legend>
+          <input class="Form-input_igrica" type="radio" name="igrica" value="Minecraft">Minecraft
+          <input class="Form-input_igrica" type="radio" name="igrica" value="Minecraft_Dungeons">Minecraft Dungeons
+          <input class="Form-input_igrica" type="radio" name="igrica" value="Minecraft_Legends">Minecraft Legends
+        </fieldset>
+        <fieldset class="Form-fieldset_unutar">
+          <legend>Za koji uređaj želite uzeti igricu?</legend>
+          <input class="Form-input_igrica" type="radio" name="uređaj" value="Računalo">Računalo
+          <input class="Form-input_igrica" type="radio" name="uređaj" value="Konzolu">Konzola
+          <input class="Form-input_igrica" type="radio" name="uređaj" value="Mobitel">Mobitel
+        </fieldset>
+        <textarea id="poruka" name="poruka" cols="30" rows="10" placeholder="Pošaljite poruku pružatelju usluga"></textarea><br>
+        <input class="Form-input_button_posalji" type="submit" value="Pošalji podatke">
+        <input class="Form-input_button_resetiraj" type="reset" value="Poništi podatke">
+      </fieldset>
+    </form>
+  </section>
+</main>
+<footer>
+  <section class="footer_prvi_dio">
+    <h2 class="footer_naslov">Zapratite Minecraft</h2>
+  </section>
+  <section class="footer_drugi_dio">
+    <a href="https://www.instagram.com/minecraft/" class="instagram"><img class="Slike_footer" src="Slike/instagram.png" alt="Instagram"></a>
+    <a href="https://www.youtube.com/minecraft" class="youtube"><img class="Slike_footer" src="Slike/youtube.png" alt="Instagram"></a>
+    <a href="https://twitter.com/Minecraft" class="twitter"><img class="Slike_footer" src="Slike/twitter.png" alt="Instagram"></a>
+    <a href="https://www.reddit.com/r/Minecraft/" class="reddit"><img class="Slike_footer" src="Slike/Reddit.png" alt="Instagram"></a>
+  </section>
+</footer>
+</body>
+</html>

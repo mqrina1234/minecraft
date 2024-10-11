@@ -1,0 +1,946 @@
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-top:0.8em;
+    padding-bottom: 0.8em;
+    padding-right:5%;
+    padding-left:5%;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("Slike/stone-navigation.jpg");
+    z-index: 5;
+    font-family: Tahoma,sans-serif;
+
+}
+
+    .Lista{
+        display:inline;
+        padding:0;
+        z-index: 5;
+    }
+
+        .Lista li{
+            display:inline-block;
+            position:relative;
+            padding-left:1em;
+            padding-right:1em;
+            z-index: 5;
+        }
+
+        .Lista a{
+            display:block;
+            text-decoration: none;
+            color:white;
+            z-index: 5;
+        }
+
+            .Lista li a:hover{
+                color:lawngreen;
+                z-index: 5;
+            }
+
+
+        .Podlista{
+            padding:0.5em 0 0 0;
+            z-index: 5;
+        }
+
+            .Podlista li{
+                padding:0.8em 2.5em 0.8em 0.6em;
+                background-color:black;
+                border-bottom:0.07em solid white;
+                z-index: 5;
+                display:block
+            }
+
+            .Podlista a{
+                width: 10em;
+                color:white;
+                text-decoration: none;
+                z-index: 5;
+            }
+
+            .Lista .Menu .Podlista{
+                position:absolute;
+                display:none;
+                z-index: 5;
+            }
+
+                .Lista .Menu:hover .Podlista{
+                    display:block;
+                }
+
+    .Naslovna_slika{
+        height:2.5em;
+    }
+
+    .Navigation_button-link{
+        text-decoration: none;
+    }
+
+        .Navigation-button{
+            background-image:url("Slike/Button.png");
+            padding:1em 3.79em;
+            margin-left:5.6075em;
+            width: 1.9em;
+            height: 0.8em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .Navigation_button-tekst{
+                font-weight: bold;
+                color:white;
+                text-decoration: none;
+                padding: 0;
+                margin: 0;
+            }
+
+                .Navigation-button:hover{
+                    background-image:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url("Slike/Button.png");
+
+                }
+
+/* Gotov navigation */
+
+/* _______Početna stranica_______ */
+
+main{
+    background-color: black;
+}
+
+.Pocetna_stranica-section_pozadina{
+    display:flex;
+    justify-content: center;
+    position:relative;
+    height:45em;
+    width:100%;
+}
+
+    .Pocetna_stranica-naslovna_slika{
+        height:45em;
+        width:100%;
+    }
+
+    .Pocetna_stranica-section_naslov_tekst_gumb{
+        top:0;
+        display:flex;
+        height:45em;
+        width:100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position:absolute;
+    }
+
+        .Pocetna_stranica-naslov{
+            margin:0;
+            padding:2em 1em 0.2em 1em;
+            color:#ffffff;
+            font-size:2em;
+            font-weight: bold;
+            text-transform:uppercase;
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .Pocetna_stranica-tekst{
+            margin:0;
+            background-color: rgba(0,0,0,0.8);
+            padding:0 9.76em 3em 9.76em;
+            color:#ffffff;
+            font-size: 1.1em;
+        }
+
+        .Pocetna_stranica-gumb_link{
+            text-decoration: none;
+        }
+
+            .Pocetna_stranica-gumb{
+                background-image:url("Slike/Button.png");
+                padding:1em 3.79em;
+                margin-top: 6em;
+                width: 1.9em;
+                height: 0.8em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .Pocetna_stranica-gumb_tekst{
+                    font-weight: bold;
+                    color:white;
+                    text-decoration: none;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                    .Pocetna_stranica-gumb:hover{
+                        background-image:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url("Slike/Button.png");
+                    }
+
+
+    .Pocetna_stranica-section_igre{
+        background-image:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url("Slike/Pocetna_stranica-pozadina_igre.jpg");
+        height:90em;
+        width:100%;
+    }
+
+        .Pocetna_stranica-igre_naslov{
+            text-align: center;
+            margin-top:0;
+            padding-top: 2em;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 2em;
+        }
+
+        .Pocetna_stranica-section_igre_pozadina{
+            height:31em;
+            width:100%;
+            display:flex;
+            align-items:end;
+            justify-content:space-evenly;
+        }
+
+            .Pocetna_stranica-section_igre_Minecraft{
+                position: relative;
+                width: 17.5em;
+                margin-bottom: 2em;
+            }
+
+                .Pocetna_stranica-igre_slika_Minecraft{
+                    display:block;
+                    width: 100%
+                }
+
+                .Pocetna_stranica-section_igre_naslov_tekst_Minecraft{
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    width:100%;
+                    height:100%;
+                    background-color: rgba(0,0,0,0.7);
+                    color:#ffffff;
+                    text-align: center;
+                    font-weight: bold;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 0;
+
+                }
+
+                    .Pocetna_stranica-section_igre_naslov_tekst_Minecraft:hover{
+                        opacity:1;
+                    }
+
+            .Pocetna_stranica-section_igre_Minecraft_Dungeons{
+                position: relative;
+                width: 17.5em;
+                margin-bottom: 2em;
+            }
+
+                .Pocetna_stranica-igre_slika_Minecraft_Dungeons{
+                    display:block;
+                    width: 100%
+                }
+
+                .Pocetna_stranica-section_igre_naslov_tekst_Minecraft_Dungeons{
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    width:100%;
+                    height:100%;
+                    background-color: rgba(0,0,0,0.7);
+                    color:#ffffff;
+                    text-align: center;
+                    font-weight: bold;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 0;
+                }
+
+                    .Pocetna_stranica-section_igre_naslov_tekst_Minecraft_Dungeons:hover{
+                        opacity:1;
+                    }
+
+            .Pocetna_stranica-section_igre_Minecraft_Legends{
+                position: relative;
+                width: 17.5em;
+                margin-bottom: 2em;
+            }
+
+                .Pocetna_stranica-igre_slika_Minecraft_Legends{
+                    display:block;
+                    width: 100%
+                }
+
+                .Pocetna_stranica-section_igre_naslov_tekst_Minecraft_Legends{
+                    position: absolute;
+                    top:0;
+                    left:0;
+                    width:100%;
+                    height:100%;
+                    background-color: rgba(0,0,0,0.7);
+                    color:#ffffff;
+                    text-align: center;
+                    font-weight: bold;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 0;
+                }
+
+                    .Pocetna_stranica-section_igre_naslov_tekst_Minecraft_Legends:hover{
+                        opacity:1;
+                    }
+
+        .Pocetna_stranica-section_trgovina{
+            margin-top: 8em;
+            display:flex;
+            width:100%;
+            height:35em;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .Pocetna_stranica-section_trgovina_pozadina{
+                background-image: url("Slike/Pocetna_stranica-merch_pozadina.jpg");
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width:80%;
+                height:30em;
+            }
+
+                .Pocetna_stranica-section_trgovina_slika{
+                    width:25%;
+                    height:20em;
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                    .Pocetna_stranica-trgovina_slika{
+                        display:block;
+                        width: 100%;
+                    }
+
+                .Pocetna_stranica-section_trgovina_naslov_tekst{
+                    width: 50%;
+                    height: 23em;
+                }
+
+                    .Pocetna_stranica-trgovina_naslov{
+                        font-size: 2.5em;
+                        text-transform: uppercase;
+                        margin-bottom: 1em;
+                        margin-top: 1em;
+                    }
+
+                    .Pocetna_stranica-trgovina_tekst{
+                        font-size: 1.5em;
+                    }
+
+
+                    .Pocetna_stranica-trgovina_link{
+                        text-decoration: none;
+                        font-size: 1.2em;
+                        color:darkgreen;
+                        text-transform: uppercase;
+                    }
+
+                        .Pocetna_stranica-trgovina_link:hover{
+                            font-size: 1.3em;
+                        }
+
+/* Gotova početna stranica */
+
+/* _______Minecraft stranica_______ */
+
+.Minecraft-section_naslovna_slika{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    height:35em;
+}
+
+    .Minecraft-naslovna_slika{
+        width:100%;
+        height:35em;
+    }
+
+.Minecraft-section_pozadina_sto_je_Minecraft{
+    background-color: white;
+    height:25em;
+    padding-bottom:6em;
+}
+
+    .Minecraft-section_sto_je_Minecraft_naslov{
+        background-color: black;
+        width: 100%;
+        display:flex;
+        justify-content: center;
+    }
+
+        .Minecraft-sto_je_Minecraft_naslov{
+            font-size:2em;
+            color:white;
+        }
+
+    .Minecraft-section_sto_je_Minecraft_tekst_slika{
+        height: 100%;
+        width:100%;
+        display:flex;
+        justify-content: space-evenly;
+    }
+
+        .Minecraft-section_sto_je_Minecraft_pozadina_tekst{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:50%;
+            height:100%;
+        }
+
+            .Minecraft-section_sto_je_Minecraft_tekst{
+                width:80%;
+            }
+
+                .Minecraft-sto_je_Minecraft_tekst{
+                    text-align: center;
+                    font-size: 1.3em;
+                }
+
+        .Minecraft-section_sto_je_Minecraft_slika{
+            display: flex;
+            width:50%;
+            height:100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .Minecraft-sto_je_Minecraft_pozadina_slika{
+                width:20em;
+            }
+
+
+
+
+
+
+.Minecraft-section_gameplay{
+    padding-top:2em;
+    background-color: black;
+    height: 22em;
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+    .Minecraft-section_gameplay_slika{
+        display: flex;
+        width:50%;
+        height:100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .Minecraft-gameplay_slika{
+            width:20em;
+        }
+
+    .Minecraft-section_gameplay_pozadina_tekst{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:50%;
+        height:100%;
+    }
+
+        .Minecraft-section_gameplay_tekst{
+            width:80%;
+        }
+
+            .Minecraft-gameplay_tekst{
+                text-align: center;
+                font-size: 1.3em;
+                color:white;
+            }
+
+
+/* Gotova Minecraft stranica */
+
+/* _______Minecraft Dungeons_______ */
+
+.Minecraft_Dungeons-section_naslovna_slika{
+    width:100%;
+    height: 38em;
+    display:flex;
+    justify-content: center;
+}
+
+    .Minecraft_Dungeons-naslovna_slika{
+        width: 100%;
+        height:38em;
+    }
+
+.Minecraft_Dungeons-section_sto_je_Minecraft_Dungeons{
+    width:100%;
+    height:12em;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    background-color: white;
+    font-size: 1.2em;
+}
+
+    .Minecraft_Dungeons-Sto_je_Minecraft_Dungeons_tekst{
+        width:70%;
+        box-shadow:0 0 1em 0 rgb(0,0,0);
+        padding:1em;
+        text-align: center;
+    }
+
+.Minecraft_Dungeons-section_multiplayer{
+    background-color: black;
+    height:40em;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .Minecraft_Dungeons-section_multiplayer_slika{
+        position: relative;
+        width:80%;
+        height:80%;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+    }
+
+        .Minecraft_Dungeons-multiplayer_slika{
+            width:80%;
+            height:80%;
+        }
+
+        .Minecraft_Dungeons-section_multiplayer_tekst{
+            width:40%;
+            height:60%;
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            color:white;
+            position:absolute;
+            font-size: 1.3em;
+            background-color: rgba(0,0,0,0.5);
+            padding:0 1.5em 0 1.5em;
+        }
+
+.Minecraft_Dungeons-section_gameplay{
+    width: 100%;
+    height:35em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+}
+
+    .Minecraft_Dungeons-section_gameplay_tekst{
+        width:40%;
+        height: 30em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+        .Minecraft_Dungeons-gameplay_naslov{
+            font-size: 2em;
+        }
+
+        .Minecraft_Dungeons-gameplay_tekst{
+            font-size: 1.3em;
+        }
+
+    .Minecraft_Dungeons-section_gameplay_slika{
+        width: 40%;
+        height:30em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .Minecraft_Dungeons-gameplay_slika{
+            height: 100%;
+        }
+
+/* Gotova Minecraft Dungeons stranica */
+
+/* _______Minecraft Legends_______ */
+
+.Minecraft_Legends-section_naslovna_slika{
+    width:100%;
+    height:42em;
+}
+
+    .Minecraft_Legends-naslovna_slika{
+        width: 100%;
+        height:42em;
+    }
+
+.Minecraft_Legends-main_pozadina{
+    background-image: linear-gradient(#090931, #4d8ba4);
+}
+
+    .Minecraft_Legends-section_sto_je_Minecraft_Legends{
+        width:100%;
+        height:8em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #090931;
+    }
+
+        .Minecraft_Legends-sto_je_Minecraft_Legends{
+            font-size: 2em;
+            color: white;
+        }
+
+    .Minecraft_Legends-section_sto_je_Minecraft_Legends_section_tekst_slika{
+        width: 100%;
+        height:25em;
+        padding: 2em 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+        .Minecraft_Legends-sto_je_Minecraft_Legends_section_tekst{
+            width: 40%;
+            height:80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 5em;
+        }
+
+            .Minecraft_Legends-sto_je_Minecraft_Legends_tekst{
+                color: white;
+                font-size: 1.4em;
+                border: 0.2em solid #090931;
+                box-shadow:0 0 3em 0 #090931;
+                padding: 1em;
+                text-align: center;
+            }
+
+        .Minecraft_Legends-section_sto_je_Minecraft_Legends_section_slika{
+            width: 50%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .Minecraft_Legends-section_sto_je_Minecraft_Legends_slika{
+                width:100%;
+            }
+
+    .Minecraft_Legends-pocetci_pozadina{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 40em;
+    }
+
+        .Minecraft_Legends-section_pocetci_pozadina{
+            background-image: url("Slike/Minecraft_Legends-pocetci_slika.webp");
+            width: 80%;
+            height: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .Minecraft_Legends-section_pocetci_tekst_naslov{
+                width: 60%;
+                height: 70%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-evenly;
+                background-color: rgba(0,0,0,0.5);
+            }
+
+                .Minecraft_Legends-section_pocetci_naslov{
+                    width:100%;
+                }
+
+                    .Minecraft_Legends-pocetci_naslov{
+                        margin: 1em;
+                        text-align: center;
+                        color: white;
+                        font-size: 2em;
+                    }
+
+                .Minecraft_Legends-section_pocetci_tekst{
+                    width:60%;
+                }
+
+                    .Minecraft_Legends-pocetci_tekst{
+                        color:white;
+                        font-size: 1.2em;
+                    }
+
+    .Minecraft_Legends-gameplay_pozadina{
+        width: 100%;
+        height:40em;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+        .Minecraft_Legends-section_gameplay_slika{
+            width: 50%;
+            height: 35em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .Minecraft_Legends-gameplay_slika{
+                width: 100%;
+            }
+
+        .Minecraft_Legends-section_gameplay_tekst{
+            width: 40%;
+            height: 35em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-right: 5em;
+        }
+
+            .Minecraft_Legends-section_pozadina_gameplay_tekst{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                border: 0.2em solid #305464;
+                box-shadow:0 0 3em 0 #305464;
+                padding: 0 2em 2em 2em;
+            }
+
+                .Minecraft_Legends-gameplay_naslov{
+                    text-align: center;
+                    font-size: 2em;
+                    color: white;
+                }
+
+                .Minecraft_Legends-gameplay_tekst{
+                    color:white;
+                    font-size: 1.2em;
+                }
+
+/* Gotova Minecraft Legends stranica */
+
+/* _______Forma_______ */
+
+.Form-pozadinska_slika{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url("Slike/Form-background_slika.jpg");
+    width:100%;
+    height: 80em;
+    display: flex;
+    justify-content: center;
+}
+
+    form{
+        margin-top: 7em;
+        color:white;
+        width: 40em;
+    }
+
+        .Form-fieldset_ispunite_za_kupovinu{
+            width: 90%;
+        }
+
+            .Form-fieldset_unutar{
+                margin-top: 1em;
+            }
+
+                .Form-input_osobni_podatci{
+                    margin:0.8em 0;
+                    font-size: 1.6em;
+                }
+
+                .Form-input_igrica{
+                    font-size: 1.6em;
+                    margin: 0.8em 1em;
+                }
+
+            textarea{
+                margin-top: 1em;
+                margin-left: 1em;
+            }
+
+            .Form-input_button_posalji{
+                margin-top: 1em;
+                margin-left: 1em;
+                width:10em;
+                height: 2em;
+                color:white;
+                background-color: green;
+                font-weight: bold;
+            }
+
+            .Form-input_button_resetiraj{
+                margin-top: 1em;
+                margin-left: 1em;
+                width:10em;
+                height: 2em;
+                color:white;
+                background-color: red;
+                font-weight: bold;
+            }
+
+/* Gotova forma */
+
+/* _______Minecraft merch_______ */
+
+.Merch-section_naslovna_slika{
+    width: 100%;
+    height:35em;
+}
+
+    .Merch-naslovna_slika{
+        width: 100%;
+        height:35em;
+        position:relative;
+    }
+
+    .Merch-section_naslov_trgovine{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:40%;
+        height:30em;
+        top:0;
+        margin-left: 4em;
+        margin-top: 4em;
+    }
+
+        .Merch-naslov_trgovine{
+            background-color: rgba(0,0,0,0.8);
+            font-size: 2em;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+.Merch-section_naslov{
+    width: 100%;
+    height:5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
+
+    .Merch-naslov{
+        color: white;
+        font-size: 2em;
+        text-align: center;
+    }
+
+.Merch-section_pozadina{
+    background-color: white;
+    width: 100%;
+    height:35em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+    .Merch-section{
+        width:30%;
+        height: 30em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+        .Merch-slika{
+            height:20em;
+        }
+
+        .Merch-tekst{
+            font-size:1.2em;
+        }
+
+            .Merch-section:hover{
+                box-shadow:0 0 3em 0 green;
+            }
+
+/* Gotova merch stranica */
+
+/* _______footer_______ */
+
+footer{
+    height:9em;
+    background-color: black;
+}
+
+    .footer_prvi_dio{
+        display:flex;
+        justify-content: center;
+    }
+
+        .footer_naslov{
+            color:white;
+            margin-top:0;
+            padding-top:1em;
+        }
+
+    .footer_drugi_dio{
+        height:4em;
+        width: 100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .Slike_footer{
+            height:3em;
+            margin-left: 2em;
+            margin-right: 2em;
+        }
+
+            .instagram:hover{
+                box-shadow: 0 0 1em 0 rgb(255,255,0);
+                border-radius: 5em;
+            }
+
+            .youtube:hover{
+                box-shadow: 0 0 1em 0 rgb(255,0,0);
+                border-radius: 5em;
+            }
+
+            .twitter:hover{
+                box-shadow: 0 0 1em 0 rgb(173,216,230,100);
+                border-radius: 5em;
+            }
+
+            .reddit:hover{
+                box-shadow: 0 0 1em 0 rgb(255, 165, 0);
+                border-radius: 5em;
+            }
